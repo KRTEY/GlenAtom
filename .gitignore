@@ -1,0 +1,14 @@
+# .gitignore
+# purpose: 이 파일은 Git이 추적하지 말아야 할 파일 목록입니다. 우리가 만든 가상환경 폴더(venv/)나 파이썬 캐시 파일 등이 GitHub에 올라가지 않도록 막아줍니다.
+# Virtual Environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
