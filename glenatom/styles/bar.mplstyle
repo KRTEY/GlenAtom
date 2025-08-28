@@ -1,7 +1,61 @@
 # glenatom/styles/bar.mplstyle
 
 # line 스타일의 설정을 대부분 그대로 가져옵니다.
-@import url('./line.mplstyle')
+#@import url('./line.mplstyle')
+# glenatom/styles/line.mplstyle
+
+# ✅ 기본 폰트 및 수학 텍스트 폰트 설정
+font.family         : Arial
+mathtext.fontset    : custom
+mathtext.it         : Arial:italic
+mathtext.rm         : Arial
+mathtext.tt         : Arial
+mathtext.bf         : Arial:bold
+mathtext.cal        : Arial
+mathtext.sf         : Arial
+
+# ✅ 폰트 관련 추가 항목
+axes.titlesize      : small
+axes.labelweight    : normal
+axes.labelsize      : small
+legend.fontsize     : small
+figure.titlesize    : small
+
+# ✅ 그래프 선, 마커, 에러바 설정
+lines.linewidth     : 1
+lines.markersize    : 1
+lines.markeredgewidth : 1.0
+errorbar.capsize    : 4
+
+# ✅ 눈금, 축 스타일
+xtick.major.size    : 5
+xtick.minor.size    : 2.5
+xtick.major.width   : 1
+xtick.minor.width   : 1
+ytick.major.size    : 5
+ytick.minor.size    : 2.5
+ytick.major.width   : 1
+ytick.minor.width   : 1
+
+xtick.direction     : in
+ytick.direction     : in
+xtick.minor.visible : True
+ytick.minor.visible : True
+xtick.top           : True
+ytick.right         : True
+
+# ✅ 서브플롯 여백 (이 부분은 필요에 따라 조절하세요)
+# figure.subplot.left   : 0.15
+# figure.subplot.right  : 0.85
+# figure.subplot.bottom : 0.15
+# figure.subplot.top    : 0.85
+# figure.subplot.wspace : 0.4
+# figure.subplot.hspace : 0.4
+
+# ✅ 기타
+figure.dpi          : 330
+grid.alpha          : 0.25
+
 
 # 위 import가 작동하지 않는 matplotlib 구버전을 위해 line.mplstyle 내용을 복사해 넣는 것을 추천합니다.
 # ------------------------------------------------------------------------------------
