@@ -19,7 +19,7 @@ def fiddich(what='line'):
 
     if os.path.exists(style_file):
         plt.style.use(style_file)
-        print(f"✅ GlenAtom style '{what}' applied successfully.")
+        #print(f"✅ GlenAtom style '{what}' applied successfully.")
     else:
         print(f"❌ Warning: GlenAtom style '{what}' not found.")
 

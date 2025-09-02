@@ -1,9 +1,5 @@
 # glenatom/styles/bar.mplstyle
 
-# line 스타일의 설정을 대부분 그대로 가져옵니다.
-#@import url('./line.mplstyle')
-# glenatom/styles/line.mplstyle
-
 # ✅ 기본 폰트 및 수학 텍스트 폰트 설정
 font.family         : Arial
 mathtext.fontset    : custom
@@ -39,38 +35,14 @@ ytick.minor.width   : 1
 
 xtick.direction     : in
 ytick.direction     : in
-xtick.minor.visible : True
-ytick.minor.visible : True
-xtick.top           : True
-ytick.right         : True
 
-# ✅ 서브플롯 여백 (이 부분은 필요에 따라 조절하세요)
-# figure.subplot.left   : 0.15
-# figure.subplot.right  : 0.85
-# figure.subplot.bottom : 0.15
-# figure.subplot.top    : 0.85
-# figure.subplot.wspace : 0.4
-# figure.subplot.hspace : 0.4
+# --- 바 차트에 맞게 수정된 부분 ---
+xtick.minor.visible : False  # 보조 눈금 숨기기
+ytick.minor.visible : False  # 보조 눈금 숨기기
+xtick.top           : False  # 위쪽 눈금 숨기기
+ytick.right         : False  # 오른쪽 눈금 숨기기
+# ---------------------------------
 
 # ✅ 기타
 figure.dpi          : 330
 grid.alpha          : 0.25
-
-
-# 위 import가 작동하지 않는 matplotlib 구버전을 위해 line.mplstyle 내용을 복사해 넣는 것을 추천합니다.
-# ------------------------------------------------------------------------------------
-# ✅ 기본 폰트 및 수학 텍스트 폰트 설정
-font.family         : Arial
-mathtext.fontset    : custom
-mathtext.it         : Arial:italic
-... (line.mplstyle의 모든 내용을 여기에 복사) ...
-xtick.top           : True
-ytick.right         : True
-# ------------------------------------------------------------------------------------
-
-# ✅ Bar 차트에 맞게 일부 설정만 변경
-# 바 차트는 보통 위쪽과 오른쪽 축, 보조 눈금이 없는 것이 깔끔합니다.
-xtick.minor.visible : False
-xtick.top           : False
-ytick.minor.visible : False
-ytick.right         : False
